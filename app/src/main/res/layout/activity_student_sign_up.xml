@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sign_in_activity_faculty">
+    tools:context=".Student_Sign_Up_Activity">
 
     <EditText
-        android:id="@+id/email_signin"
+        android:id="@+id/email_reg_s"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="382dp"
+        android:layout_marginTop="29dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:hint="Enter Email"
@@ -19,13 +19,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/passsignin"
+        android:id="@+id/passreg_s"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="34dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:hint="Enter Password"
@@ -35,40 +35,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_signin" />
+        app:layout_constraintTop_toBottomOf="@+id/email_reg_s" />
 
     <Button
-        android:id="@+id/signin_btn"
+        android:id="@+id/student_up_btn"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="64dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passsignin" />
+        app:layout_constraintTop_toBottomOf="@+id/passreg_s" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="302dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="29dp"
-        android:text="Not Registered Yet? Sign Up"
+        android:id="@+id/textView_s1"
+        android:layout_width="345dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:text="Already Registerd? Sign in."
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/faculty_up_btn" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="314dp"
-        android:text="Faculty Sign in Process"
+        android:layout_marginTop="323dp"
+        android:text="Student Sign Up Process"
         android:textAlignment="center"
         android:textSize="22sp"
         android:textStyle="bold"
