@@ -3,12 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bg"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Sign_in_activity">
 
     <EditText
-        android:id="@+id/email_reg"
+        android:id="@+id/email_signin"
         android:layout_width="311dp"
         android:layout_height="41dp"
         android:layout_marginTop="382dp"
@@ -23,10 +22,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/passreg"
+        android:id="@+id/passsignin"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:hint="Enter Password"
@@ -34,31 +33,34 @@
         android:minHeight="48dp"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_reg" />
+        app:layout_constraintTop_toBottomOf="@+id/email_signin" />
 
     <Button
-        android:id="@+id/registration_btn"
+        android:id="@+id/signin_btn"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="80dp"
         android:background="@color/colorPrimaryDark"
-        android:text="Sign Up"
+        android:text="Sign In"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passreg" />
+        app:layout_constraintTop_toBottomOf="@+id/passsignin" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="345dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="36dp"
-        android:text="Already Registerd? Sign in."
+        android:id="@+id/textView2"
+        android:layout_width="302dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="29dp"
+        android:text="Not Registered Yet? Sign Up"
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registration_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
