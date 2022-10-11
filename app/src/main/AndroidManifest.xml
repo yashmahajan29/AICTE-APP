@@ -14,13 +14,18 @@
         android:theme="@style/Theme.AICTE"
         tools:targetApi="31">
         <activity
+            android:name=".Student_dash"
+            android:exported="false" />
+        <activity
+            android:name=".faculty_dash"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Sign_in_activity_faculty"
             android:exported="false" />
         <activity
-
             android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
