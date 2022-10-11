@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
-    tools:context=".Student_Sign_Up_Activity">
+    tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/email_reg_s"
+        android:id="@+id/email_reg"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="382dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:hint="Enter Email"
@@ -19,13 +20,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/passreg_s"
+        android:id="@+id/passreg"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:hint="Enter Password"
@@ -33,48 +34,31 @@
         android:minHeight="48dp"
         android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email_reg_s" />
+        app:layout_constraintTop_toBottomOf="@+id/email_reg" />
 
     <Button
-        android:id="@+id/student_up_btn"
+        android:id="@+id/student_btn"
         android:layout_width="311dp"
         android:layout_height="41dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:background="@color/colorPrimaryDark"
         android:text="Sign Up"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passreg_s" />
+        app:layout_constraintTop_toBottomOf="@+id/passreg" />
 
     <TextView
-        android:id="@+id/textView_s1"
+        android:id="@+id/textView"
         android:layout_width="345dp"
         android:layout_height="39dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:text="Already Registerd? Sign in."
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/faculty_up_btn" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="323dp"
-        android:text="Student Sign Up Process"
-        android:textAlignment="center"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/student_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

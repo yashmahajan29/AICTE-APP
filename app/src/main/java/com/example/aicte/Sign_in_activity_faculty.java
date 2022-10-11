@@ -12,8 +12,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -40,7 +42,7 @@ public class Sign_in_activity_faculty extends AppCompatActivity {
         mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Sign_in_activity_faculty.this , FacultySignUpActivity.class));
+                startActivity(new Intent(Sign_in_activity_faculty.this , MainActivity.class));
             }
         });
         signInBtn.setOnClickListener(new View.OnClickListener() {

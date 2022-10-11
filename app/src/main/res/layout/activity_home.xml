@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/faculty_up_btn"
+        android:id="@+id/student_btn"
         android:layout_width="311dp"
         android:layout_height="41dp"
         android:layout_marginTop="34dp"
