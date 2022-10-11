@@ -3,7 +3,6 @@ package com.example.aicte;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -13,14 +12,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnCanceledListener;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,10 +34,16 @@ public class MainActivity extends AppCompatActivity {
         mEmail = findViewById(R.id.email_reg);
         mPass = findViewById(R.id.passreg);
         mTextView = findViewById(R.id.textView);
-        signupBtn = findViewById(R.id.registration_btn);
+        signupBtn = findViewById(R.id.student_btn);
 
         mAuth = FirebaseAuth.getInstance();
 
+        mTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this , Sign_in_activity_faculty.class));
+            }
+        });
         signupBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 Toast.makeText(MainActivity.this, "Registered Successfully !!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this , Sign_in_activity.class));
+                                startActivity(new Intent(MainActivity.this , Sign_in_activity_faculty.class));
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {

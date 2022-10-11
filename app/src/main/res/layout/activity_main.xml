@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/email_reg" />
 
     <Button
-        android:id="@+id/registration_btn"
+        android:id="@+id/student_btn"
         android:layout_width="311dp"
         android:layout_height="41dp"
         android:layout_marginTop="60dp"
@@ -59,6 +59,6 @@
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registration_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/student_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
