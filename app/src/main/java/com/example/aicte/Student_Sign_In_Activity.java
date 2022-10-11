@@ -17,7 +17,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class Sign_in_activity_faculty extends AppCompatActivity {
+public class Student_Sign_In_Activity extends AppCompatActivity {
 
     private EditText mEmail , mPass;
     private TextView mTextView;
@@ -28,19 +28,19 @@ public class Sign_in_activity_faculty extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in_faculty);
+        setContentView(R.layout.activity_student_sign_in);
 
-        mEmail = findViewById(R.id.email_signin);
-        mPass = findViewById(R.id.passsignin);
-        mTextView = findViewById(R.id.textView2);
-        signInBtn = findViewById(R.id.signin_btn);
+        mEmail = findViewById(R.id.email_signin_s2);
+        mPass = findViewById(R.id.passsignin_s2);
+        mTextView = findViewById(R.id.textView_s2);
+        signInBtn = findViewById(R.id.signin_btn_s2);
 
         mAuth = FirebaseAuth.getInstance();
 
         mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Sign_in_activity_faculty.this , FacultySignUpActivity.class));
+                startActivity(new Intent(Student_Sign_In_Activity.this , Student_Sign_Up_Activity.class));
             }
         });
         signInBtn.setOnClickListener(new View.OnClickListener() {
@@ -56,20 +56,20 @@ public class Sign_in_activity_faculty extends AppCompatActivity {
 
         if (!email.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             if (!pass.isEmpty()){
-               mAuth.signInWithEmailAndPassword(email , pass)
-                       .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
-                           @Override
-                           public void onSuccess(AuthResult authResult) {
-                               Toast.makeText(Sign_in_activity_faculty.this, "Login Successfully !!", Toast.LENGTH_SHORT).show();
-                               startActivity(new Intent(Sign_in_activity_faculty.this, faculty_dash.class));
-                               finish();
-                           }
-                       }).addOnFailureListener(new OnFailureListener() {
-                           @Override
-                           public void onFailure(@NonNull Exception e) {
-                               Toast.makeText(Sign_in_activity_faculty.this, "Login Failed", Toast.LENGTH_SHORT).show();
-                           }
-                       });
+                mAuth.signInWithEmailAndPassword(email , pass)
+                        .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                            @Override
+                            public void onSuccess(AuthResult authResult) {
+                                Toast.makeText(Student_Sign_In_Activity.this, "Login Successfully !!", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(Student_Sign_In_Activity.this, Student_dash.class));
+                                finish();
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(Student_Sign_In_Activity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                            }
+                        });
             }else{
                 mPass.setError("Empty fields are not allowed");
             }

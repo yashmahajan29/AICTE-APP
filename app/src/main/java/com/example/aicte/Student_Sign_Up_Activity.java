@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class MainActivity extends AppCompatActivity {
+public class Student_Sign_Up_Activity extends AppCompatActivity {
 
     private EditText mEmail , mPass;
     private TextView mTextView;
@@ -29,19 +29,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_student_sign_up);
 
-        mEmail = findViewById(R.id.email_reg);
-        mPass = findViewById(R.id.passreg);
-        mTextView = findViewById(R.id.textView);
-        signupBtn = findViewById(R.id.student_btn);
+        mEmail = findViewById(R.id.email_reg_s);
+        mPass = findViewById(R.id.passreg_s);
+        mTextView = findViewById(R.id.textView_s1);
+        signupBtn = findViewById(R.id.student_up_btn);
 
         mAuth = FirebaseAuth.getInstance();
 
         mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this , Sign_in_activity_faculty.class));
+                startActivity(new Intent(Student_Sign_Up_Activity.this , Student_Sign_Up_Activity.class));
             }
         });
         signupBtn.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
                 createUser();
             }
         });
-
     }
     private void createUser() {
         String email = mEmail.getText().toString();
@@ -63,14 +62,14 @@ public class MainActivity extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                Toast.makeText(MainActivity.this, "Registered Successfully !!", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(MainActivity.this , Sign_in_activity_faculty.class));
+                                Toast.makeText(Student_Sign_Up_Activity.this, "Registered Successfully !!", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(Student_Sign_Up_Activity.this , Student_Sign_In_Activity.class));
                                 finish();
                             }
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(MainActivity.this, "Registration Error", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Student_Sign_Up_Activity.this, "Registration Error", Toast.LENGTH_SHORT).show();
                             }
                         });
             }else{

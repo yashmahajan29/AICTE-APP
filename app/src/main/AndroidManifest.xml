@@ -14,13 +14,19 @@
         android:theme="@style/Theme.AICTE"
         tools:targetApi="31">
         <activity
+            android:name=".Student_Sign_In_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Student_Sign_Up_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Student_dash"
             android:exported="false" />
         <activity
             android:name=".faculty_dash"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FacultySignUpActivity"
             android:exported="false" />
         <activity
             android:name=".Sign_in_activity_faculty"
