@@ -5,10 +5,16 @@
       <map>
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/drawable/btn_shape.xml" value="0.251" />
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/drawable/edit_shape.xml" value="0.1825" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_faculty_dash.xml" value="0.2826086956521739" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_faculty_sign_up.xml" value="0.3692708333333333" />
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_home.xml" value="0.3692708333333333" />
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_sign_in.xml" value="0.33" />
         <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_sign_in_faculty.xml" value="0.17958459979736577" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_stud_form.xml" value="0.3692708333333333" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_student_dash.xml" value="0.5" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_student_sign_in.xml" value="0.3692708333333333" />
+        <entry key="..\:/Android Studio Projects/AICTE/app/src/main/res/layout/activity_student_sign_up.xml" value="0.3692708333333333" />
         <entry key="..\:/Users/utkarsha/Documents/AICTE/AICTE-APP/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
       </map>
     </option>

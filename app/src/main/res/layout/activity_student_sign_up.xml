@@ -54,14 +54,14 @@
         android:id="@+id/textView_s1"
         android:layout_width="345dp"
         android:layout_height="39dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="26dp"
         android:text="Already Registerd? Sign in."
         android:textAlignment="center"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/faculty_up_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/student_up_btn" />
 
     <TextView
         android:id="@+id/textView4"
